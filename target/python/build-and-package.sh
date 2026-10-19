@@ -15,7 +15,7 @@ if [ -z "$version_micro" ] || [ -z "$version_build" ]; then
 fi
 
 case $version_short in
-    3.10|3.11)
+    3.10|3.11|3.12)
         abis="armeabi-v7a arm64-v8a x86 x86_64"
         ;;
     *)

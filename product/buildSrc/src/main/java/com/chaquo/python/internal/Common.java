@@ -18,12 +18,7 @@ public class Common {
     public static final Map<String, String> PYTHON_VERSIONS = new LinkedHashMap<>();
     static {
         // Version, build number
-        PYTHON_VERSIONS.put("3.10.22", "0");
-        PYTHON_VERSIONS.put("3.11.17", "0");
-        PYTHON_VERSIONS.put("3.12.15", "0");
-        PYTHON_VERSIONS.put("3.13.16", "0");
-        PYTHON_VERSIONS.put("3.14.8", "0");
-        PYTHON_VERSIONS.put("3.15.0", "0");
+        PYTHON_VERSIONS.put("3.12.15", "1");
     }
 
     public static List<String> PYTHON_VERSIONS_SHORT = new ArrayList<>();
@@ -34,7 +29,7 @@ public class Common {
         }
     }
 
-    public static final String DEFAULT_PYTHON_VERSION = "3.10";
+    public static final String DEFAULT_PYTHON_VERSION = "3.12";
 
     public static List<String> supportedAbis(String pythonVersion) {
         if (!PYTHON_VERSIONS_SHORT.contains(pythonVersion)) {
@@ -45,7 +40,7 @@ public class Common {
         List<String> result = new ArrayList<>();
         result.add("arm64-v8a");
         result.add("x86_64");
-        if (Arrays.asList("3.8", "3.9", "3.10", "3.11").contains(pythonVersion)) {
+        if (Arrays.asList("3.8", "3.9", "3.10", "3.11", "3.12").contains(pythonVersion)) {
             result.add("armeabi-v7a");
             result.add("x86");
         }
