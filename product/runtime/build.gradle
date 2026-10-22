@@ -230,7 +230,7 @@ if (!(cmakeBuildType in KNOWN_BUILD_TYPES)) {
         "Unknown build type '$cmakeBuildType'; valid values are $KNOWN_BUILD_TYPES")
 }
 
-(["host"] + Common.supportedAbis("3.12")).each { abi ->
+(["host"] + Common.supportedAbis("3.13")).each { abi ->
     def pyVersions = Common.PYTHON_VERSIONS_SHORT.findAll {
         Common.supportedAbis(it).contains(abi)
     }
