@@ -33,7 +33,7 @@ mv "Python-$version" "$build_dir"
 cd "$build_dir"
 
 # Apply patches.
-patches=""
+patches="lfs"
 if [ $version_int -le 311 ]; then
     patches+=" sysroot_paths"
 fi

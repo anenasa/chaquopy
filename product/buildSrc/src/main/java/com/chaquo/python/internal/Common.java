@@ -11,7 +11,7 @@ public class Common {
     public static final String MIN_AGP_VERSION = "7.3.0";
 
     // This should match api_level in target/android-env.sh.
-    public static final int MIN_SDK_VERSION = 24;
+    public static final int MIN_SDK_VERSION = 23;
 
     public static final String COMPILE_SDK_VERSION = "37.0";
 
